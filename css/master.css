@@ -12,21 +12,8 @@
     text-decoration: none; /* This means we do not want hyperlinks to be underlined */
   }
 
-  /* create top banner background
-  .banner1 {
-    background-image: url(topbanner.jpeg) top no-repeat;
-    background-size: 100% 100px
-  }
-
-  /* create the botton background */
-  /* #bg {
-    background-color: lightsteelblue
-  } */ 
-
   body {
-    background-image: url(topbanner.jpeg) top no-repeat;
-    background-size: 100% 50px
-    background-color: hsla(9, 100%, 64%, 0.5);     /* set the background color here */
+    background-color: beige;     /* set the background color here */
     color: black;     /* set the text color to black here */
     font-family: Arial, Helvetica, sans-serif;     /* set the font here */
     text-align: center;     /* set the text alignment here */

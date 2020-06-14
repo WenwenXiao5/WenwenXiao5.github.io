@@ -3,7 +3,7 @@
 /* Text inside these asterisks and slashes are comments for human */
 
   a {
-    color: blue;     /* set the text color to blue here */
+    color: #0091ae;     /* set the text color to blue here */
     text-decoration: none; /* This means we do not want hyperlinks to be underlined */
   }
 
@@ -13,25 +13,152 @@
   }
 
   body {
-    background-color: beige;     /* set the background color here */
+    margin: 0;
+    padding: 0;
+    background-color: #D3E5EE;     /* set the background color here */
     color: black;     /* set the text color to black here */
-    font-family: Arial, Helvetica, sans-serif;     /* set the font here */
-    text-align: center;     /* set the text alignment here */
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 350;
+    /* font-weight font-size/line-height */
+    /* 1.2em 2em Arial, Helvetica, sans-serif;     set the font here */
+    /* text-align: center;     set the text alignment here */
    }
 
-  footer {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  header{
+    /* margin-bottom: 1%;
+    margin-top: 1%; */
+    text-align: center;
+    color: #F0F6F9;
+    /* background:#33475b no-repeat center; */
+    background-image: url("../imgs/topbanner.jpg"); 
+    background-size: 100% 100%
+     /* 20px 10px no-repeat center ; */
+    /* url("../imgs/topbanner.jpeg"); */
+  } 
+
+  /* style the top banner image */
+  .topbanner{
+    background-size: 20% auto
   }
 
+  /* style the nav pannel */
+  /* nav {
+    font-size: 120%;
+    background-color:#33475b;
+    overflow: hidden;
+  } */
+
+  /* Override navigation pannel background color */
+  .navbar{
+    background-color: #3d5a80;
+    overflow: hidden;
+    font-size: 110%;
+  }
+
+  /* Override navigation text color  */
+  .navbar-light .navbar-nav .nav-link {
+    color: #F0F6F9;
+  }
+
+  /* Override the navigation text color when hover */
+  .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color:#D3E5EE;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .open{
+    display: block;
+  }
+
+  /* style the navigation pannel class */
+  nav a{
+    box-sizing: border-box;
+    color: #f2f2f2;
+    padding: 1% 2%;
+    display: inline-block;
+    width:50%;
+    min-width: 40%;
+    text-decoration: none;
+    overflow: auto;
+    transition: 0.5s background-color;
+    /* border-style: solid; */
+  }
+
+  /* style color of links when hover */
+  /* nav a:hover{
+    background-color: #34495E;
+    color: #fafafa;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  } */
+
+  /* add a color to the corrent active link */
+  /* nav a:active{
+    background-color: #F9E79F;
+    color: #283747;
+  } */
+
+  /* .secleft{
+    width: 30%;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    border-style: solid;
+  } */
+
+  .row{
+    margin: 3% 20% 3% 20%;
+  }
+  .col-md-4{
+    border: solid;
+    /* margin: 3%; */
+    /* padding: 3%; */
+  } 
+
+  .col-md-4 img{
+    border-radius: 50%;
+    border: solid;
+  }
+
+  .col-md-7{
+    border: solid;
+    /* margin: 3%; */
+    padding: 1%;
+  } 
+
+  ul{
+    margin: 0%;
+    display: table;
+    text-align: left;
+
+  }
+  /* .secright{
+    width: 60%;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    border-style: solid;
+  }
+
+  footer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    clear: both
+  } */
+
   h1 {
-    margin-bottom: 0.5rem;
-    margin-top: 3rem;
+    padding: 8%;
    }
 
   h2 {
     color: #075AAB;
-
     margine-bottom: 2.5rem;
     margine-top: 2.5rem;
     /* set the text color of to #075AAB here */
@@ -58,8 +185,5 @@
   }
 
   /* this controls how the bullet points in the resume page looks */
-  ul {
-    display: table;
-    margin: 0 auto;
-    text-align: left;
-  }
+
+  

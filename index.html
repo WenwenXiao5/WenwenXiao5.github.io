@@ -4,34 +4,101 @@
 
 <html lang="en">
 
-  <header>
+  <head>
     <title> Wenwen Xiao </title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--- Bootstrap CSS stylesheet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- My CSS stylesheet and JavaScript-->
     <link rel="stylesheet" href="css/master.css">
+    <script src="js/master.js"></script>
     <!----the reason of having two following links is that
        some browsers recognize the first one -->
-    <link rel="icon" href="Coco.png" type="image/png" />
-    <link rel="shortcut" href="my.ico" type="image/x-icon">
+       
+    <link rel="icon" href="Coco.png" type="imgs/png" />
+    <link rel="shortcut" href="my.ico" type="imgs/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" 
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" 
+      crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="name" content="Wenwen Xiao">
     <!---Tell the search engine not to show the page in search results-->
     <meta name="robots" content="noindex, nofollow">
-  </header>
+  </head>
 
   <body>
-    <img src="images/topbanner.jpg" width="100%" alt="banner">
-    <h1> Wenwen Xiao's Portal </hr>
-    <h2> About Me </h2>
-    <p> I am a student in University of British Columbia. </p>
-    <p> I have a BA of Civil Engineering in University of Waterloo. </p>
-    <p> I am really interested in computer science,
-      and I decided to make a career change </p>
+    <header>
+      <h1> Wenwen Xiao </h1>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#">Home</a>
+            <!-- <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a> -->
+            <a class="nav-item nav-link" href="file:///Users/nicoco/Desktop/App/WebDev/Github.io/AboutMe.html">About Me</a>
+            <a class="nav-item nav-link" href="#">Projects</a>
+            <a class="nav-item nav-link" href="#">Contacts</a>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+<!-- Coppied from Boostrap Example (Two Columns) -->
+  <div class="row featurette">
+    <div class="col-md-4 order-md-1">
+      <img src="imgs/potrait.jpeg" width="100%" alt="potrait">
+      <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" 
+        width="500" height="500" xmlns="http://www.w3.org/2000/svg" 
+        preserveAspectRatio="xMidYMid slice" focusable="false" role="img" 
+        aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+    </div>
+
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading"> About Me </h2>
+      <p class="lead"> I am a Computer Science practitioner based in Canada. 
+        New challenges and learning new skills make me feel energized. </p>
+      <p class="lead"> Starting with learning Python by myself, I was fascinated by Computer Science.
+        Out of this passion I developed couple of projects using Python, HTML, CSS, JavaScript 
+        involving the concepts of Web crawler, database, and Web Developement. </p>
+    </div>
+    
+  </div>
 
     <h2> Credentials and Portfolio </h2>
+
 
     <p> <a href="resume.html"> My Resume </a> | <a href="http://github.com/WenwenXiao5"> My GitHub </a> </p>
     <h2> Contact </h2>
 
     <p> Email: <a href="mailto:695709347xww@gmail.com"> 695709347xww@gmail.com </a> </p>
+    <a href="https://www.linkedin.com/in/wenwen-xiao-905634b2/">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/WenwenXiao5">
+      <i class="fab fa-github"></i>
+    </a>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
+      crossorigin="anonymous"></script>
 
   </body>
 

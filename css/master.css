@@ -153,6 +153,21 @@
     box-sizing: border-box;
     margin: 5% 20%;
   }
+
+  .btn-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid; */
+    padding: 0% 0% 10% 0%;
+  }
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid; */
+    padding: 0% 0% 0% 0%;
+  }
   /* .secright{
     width: 60%;
     box-sizing: border-box;

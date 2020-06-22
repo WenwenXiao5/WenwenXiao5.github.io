@@ -12,7 +12,8 @@
     text-decoration: none; /* This means we do not want hyperlinks to be underlined */
   }
 
-  body {
+  html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: #D3E5EE;     /* set the background color here */
@@ -20,18 +21,21 @@
     font: 300 16px "Open Sans", sans-serif;
     font-weight: 300;
     font-size: 110%;
-    line-height: 1.6;
+    line-height: 1.6; 
 
     /* font-weight font-size/line-height */
     /* 1.2em 2em Arial, Helvetica, sans-serif;     set the font here */
     /* text-align: center;     set the text alignment here */
    }
 
+   .wrapper{
+     min-height: 100%;
+     margin: 5% 0% 0% 0%;
+   }
   header{
-    /* margin-bottom: 1%;
-    margin-top: 1%; */
+    margin-bottom: 10%;
     text-align: center;
-    color: #F0F6F9;
+    color: #d3d3d3;
     /* background:#33475b no-repeat center; */
     background-image: url("../imgs/topbanner.jpg"); 
     background-size: 100% 100%
@@ -53,14 +57,14 @@
 
   /* Override navigation pannel background color */
   .navbar{
-    background-color: #3d5a80;
+    background-color: #303036;
     overflow: hidden;
     font-size: 110%;
   }
 
   /* Override navigation text color  */
   .navbar-light .navbar-nav .nav-link {
-    color: #F0F6F9;
+    color: #d3d3d3;
   }
 
   /* Override the navigation text color when hover */
@@ -80,7 +84,7 @@
   /* style the navigation pannel class */
   nav a{
     box-sizing: border-box;
-    color: #f2f2f2;
+    color: #d3d3d3;
     padding: 1% 2%;
     display: inline-block;
     width:50%;
@@ -108,20 +112,26 @@
     color: #283747;
   } */
 
-  /* .secleft{
-    width: 30%;
-    box-sizing: border-box;
-    display: inline-block;
-    float: left;
-    border-style: solid;
-  } */
+  .btn-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid; */
+    padding: 0% 0% 10% 0%;
+  }
+
+  .center{
+    text-align: center;
+    margin: 0%;
+  }
+
 
   .row{
     margin: 0% 20% 5% 20%;
   }
 
   .sectionTitle{
-    margin: 3% 20% 0% 20%;
+    margin: 0% 20% 0% 20%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -133,7 +143,7 @@
   } 
 
   .col-md-4 img{
-    /* border-radius: 50%; */
+    border-radius: 50%;
     border: solid;
   }
 
@@ -154,33 +164,80 @@
     margin: 5% 20%;
   }
 
-  .btn-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: solid; */
-    padding: 0% 0% 10% 0%;
-  }
-  .center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: solid; */
-    padding: 0% 0% 0% 0%;
-  }
-  /* .secright{
-    width: 60%;
-    box-sizing: border-box;
+  .fav-icon{
     display: inline-block;
-    float: left;
-    border-style: solid;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;  
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
   }
 
-  footer {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    clear: both
+  .footer {
+    background: #303036;
+    color: #d3d3d3;
+    box-sizing: border-box;
+    height: 600px;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    margin-top: 5%;
+    padding: 50px, 50px, 60px, 50px;
+  }
+
+  .footer-content{
+    height: 500px;
+  }
+
+  .footer-title{
+    font-size: 240%;
+    font-weight: 500;
+    padding: 4% 0% 0% 0%;
+  }
+
+  .footer-nav{
+    
+  }
+  .footer-text{
+    margin: 0%;
+    font-size: 80%;
+  }
+
+  /* .footer-links a{
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
   } */
+
+  .footer-icons{
+    display: inline-block;
+    width: 40px;
+    height: 40px;  
+    font-size: 30px;
+    color: #d3d3d3;
+    text-align: center;
+    vertical-align: middle;
+    /* line-height: 35px; */
+    margin: 3px 3px 3px 3px
+  }
+
+  .footer-bottom{
+    /* background: #343a40; */
+    color: #686868;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    /* line-height: 1.5px; */
+    font-size: 80%;
+    /* position: absolute; */
+    padding: 30px 0px 10px 0px;
+    overflow: auto;
+    /* border: solid red; */
+  }
 
   h1 {
     padding: 8%;
@@ -212,6 +269,21 @@
     margin-top: 0.5%;
   }
 
+
+  /* The code for Responsive Footer */
+ 
+@media (max-width: 880px) {
+ 
+  .footer .footer-content 
+  .footer-title .footer-links
+  .footer-icons .footer-bottom{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+}
   /* this controls how the bullet points in the resume page looks */
 
   
